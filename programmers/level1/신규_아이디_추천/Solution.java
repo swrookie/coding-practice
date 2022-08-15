@@ -1,4 +1,4 @@
-// package programmers.level1.신규_아이디_추천;
+package level1.신규_아이디_추천;
 
 import java.lang.StringBuilder;
 

@@ -1,4 +1,4 @@
-// package programmers.level1.로또의_최고_순위와_최저_순위;
+package level1.로또의_최고_순위와_최저_순위;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
@@ -28,8 +28,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] lottos = { 44, 1, 0, 0, 31, 25 };
-        int[] win_nums = { 31, 10, 45, 1, 6, 19 };
+        int[] lottos = {44, 1, 0, 0, 31, 25};
+        int[] win_nums = {31, 10, 45, 1, 6, 19};
 
         System.out.println(Arrays.toString(new Solution().solution(lottos, win_nums)));
     }

@@ -1,3 +1,5 @@
+package level1.키패드_누르기;
+
 import java.util.*;
 
 public class Solution {
@@ -17,18 +19,18 @@ public class Solution {
 
         Map<String, int[]> keyPad = new HashMap<>();
 
-        keyPad.put("1", new int[] { 0, 0 });
-        keyPad.put("2", new int[] { 0, 1 });
-        keyPad.put("3", new int[] { 0, 2 });
-        keyPad.put("4", new int[] { 1, 0 });
-        keyPad.put("5", new int[] { 1, 1 });
-        keyPad.put("6", new int[] { 1, 2 });
-        keyPad.put("7", new int[] { 2, 0 });
-        keyPad.put("8", new int[] { 2, 1 });
-        keyPad.put("9", new int[] { 2, 2 });
-        keyPad.put("*", new int[] { 3, 0 });
-        keyPad.put("0", new int[] { 3, 1 });
-        keyPad.put("#", new int[] { 3, 2 });
+        keyPad.put("1", new int[] {0, 0});
+        keyPad.put("2", new int[] {0, 1});
+        keyPad.put("3", new int[] {0, 2});
+        keyPad.put("4", new int[] {1, 0});
+        keyPad.put("5", new int[] {1, 1});
+        keyPad.put("6", new int[] {1, 2});
+        keyPad.put("7", new int[] {2, 0});
+        keyPad.put("8", new int[] {2, 1});
+        keyPad.put("9", new int[] {2, 2});
+        keyPad.put("*", new int[] {3, 0});
+        keyPad.put("0", new int[] {3, 1});
+        keyPad.put("#", new int[] {3, 2});
 
         List<String> thumbs = new ArrayList<>();
 
@@ -69,6 +71,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().solution(new int[] { 1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5 }, "right"));
+        System.out.println(
+                new Solution().solution(new int[] {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5}, "right"));
     }
 }
