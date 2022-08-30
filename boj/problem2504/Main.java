@@ -9,6 +9,7 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
+    // 분배 법칙
     public static String solve(String brackets) {
         int answer = 0;
         Stack<String> st = new Stack<>();

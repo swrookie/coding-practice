@@ -1,3 +1,4 @@
+# 분배 법칙
 def solve(brackets: str) -> str:
     answer = 0
     st = []
