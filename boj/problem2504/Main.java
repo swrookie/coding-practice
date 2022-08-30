@@ -10,6 +10,7 @@ import java.util.StringTokenizer;
 
 public class Main {
     // 분배 법칙
+    // 참고: https://mjmjmj98.tistory.com/70
     public static String solve(String brackets) {
         int answer = 0;
         Stack<String> st = new Stack<>();

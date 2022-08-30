@@ -1,4 +1,5 @@
 # 분배 법칙
+# 참고: https://mjmjmj98.tistory.com/70
 def solve(brackets: str) -> str:
     answer = 0
     st = []
