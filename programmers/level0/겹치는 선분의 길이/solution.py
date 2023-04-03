@@ -33,23 +33,16 @@ def solution(lines):
             combination(N, M, depth + 1, i + 1)
 
     combination(N, M, 0, 0)
-    print("final result: ", result)
-    # answer = sum(result) - 1 if sum(result) != 0 else 0
 
     if not result:
         return 0
 
     lines = sorted(lines, key=lambda x: (x[0], x))
-    # print(lines)
     result = sorted(result, key=lambda x: (x[0], x))
-    # line1, line2, line3 = result
-    # if line1[1] == line2[0] and line2[1] == line3[0]:
-    #     return answer
 
     processed = []
     lines = result
 
-    # print("lines: ", lines)
     for line in lines:
         start, end = line
         for idx, i in enumerate(range(start, end + 1)):
@@ -58,6 +51,20 @@ def solution(lines):
             if idx > 0:
                 answer += 1
             processed.append(i)
-        # print(answer)
+
+    # 참고한 솔루션 중 간소하고 개인적으로 제일 깔끔한 솔루션
+    # sets = [set(range(min(l), max(l))) for l in lines]
+    # print(sets)
+    # print(sets[0] & sets[1])
+    # print(sets[0] & sets[2])
+    # print(sets[1] & sets[2])
+    # print(sets[0] & sets[1] | sets[0] & sets[2] | sets[1] & sets[2])
+    # return len(sets[0] & sets[1] | sets[0] & sets[2] | sets[1] & sets[2])
 
     return answer
+
+
+if __name__ == "__main__":
+    test_cases = ([[0, 1], [2, 5], [3, 9]], [[-1, 1], [1, 3], [3, 9]], [[0, 5], [3, 9], [1, 10]])
+    for case in test_cases:
+        print(solution(case))
